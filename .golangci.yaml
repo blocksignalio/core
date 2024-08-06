@@ -1,0 +1,17 @@
+linters:
+  enable-all: true
+  disable:
+    - execinquery
+    - gomnd
+    - mnd                       # nope
+    - varnamelen                # nope
+    - wsl                       # nope
+    - funlen                    # nope
+    - forbidigo                 # TODO: remove that one once i introduce logs
+    - nlreturn                  # nope
+    - depguard                  # nope
+    - godox                     # nope
+    - lll                       # nope
+issues:
+  exclude-files:
+    - cmd/main.go
